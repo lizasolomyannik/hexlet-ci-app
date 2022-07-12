@@ -4,7 +4,7 @@ jobs:
   project_setup:
     runs-on: ubuntu-latest
     steps:
-      - run: install build
+      - run: npm install
   run_tests:
     runs-on: ubuntu-latest
     steps:
