@@ -5,6 +5,14 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - run: npm install
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - run: npm run build
+  start:
+    runs-on: ubuntu-latest
+    steps:
+      - run: npm start
   run_tests:
     runs-on: ubuntu-latest
     steps:
