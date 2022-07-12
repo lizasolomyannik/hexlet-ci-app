@@ -1,0 +1,15 @@
+name: first workflow
+on: push
+jobs:
+  project setup:
+    runs-on: ubuntu-latest
+    steps:
+      - run: install build
+  run tests:
+    runs-on: ubuntu-latest
+    steps:
+      - run: npm test
+  run linter:
+    runs-on: ubuntu-latest
+    steps:
+      - run: npx eslint .
