@@ -1,15 +1,15 @@
 name: first workflow
 on: push
 jobs:
-  project setup:
+  project_setup:
     runs-on: ubuntu-latest
     steps:
       - run: install build
-  run tests:
+  run_tests:
     runs-on: ubuntu-latest
     steps:
       - run: npm test
-  run linter:
+  run_linter:
     runs-on: ubuntu-latest
     steps:
       - run: npx eslint .
